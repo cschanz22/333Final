@@ -1,12 +1,14 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      Locations!
+      Geo-Location!
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-<p>This is your current location in the wilderness based of latitude and longitude. Use this wisely :)</p>
-
+<h4 ion-text color="secondary">This is your current location in the wilderness based of latitude and longitude. Use this wisely :)</h4>
+<button ion-button (click)="startGeo()"> Find Location </button>
+<h6 ion-text color="third">Latitude: {{lat}}</h6>
+<h6 ion-text color="third">Longitude: {{lng}}</h6>
 </ion-content>

@@ -12,6 +12,7 @@ import { TabsPage } from '../pages/tabs/tabs'
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Camera, CameraOptions } from '@ionic-native/camera';
+import { Geolocation } from '@ionic-native/geolocation';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
     StatusBar,
     SplashScreen,
     Camera,
+    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
