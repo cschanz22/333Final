@@ -1,11 +1,22 @@
 <ion-header>
   <ion-navbar color="primary">
     <ion-title>
-      Flashlight!
+      Brightness Control!
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h4 ion-text color="secondary">This Tab will help you see in the dark! Using the flashlight is going to be cruical to your survival!!</h4>
+  <h4 ion-text color="secondary">This Tab will help you see in the dark! Adjusting the brightness is going to be cruical to your survival!!</h4>
+    <ion-card>
+      <ion-card-header>
+        <h4 text-align= "center" ion-text color="third">Slide the bar to adjust the brightness!</h4>
+        <ion-card-content>
+          <ion-range color="third" min = "0" max="10" step ="1"(ionChange)="setBrightness()" [(ngModel)]="brightness">
+            <ion-label range-left>0</ion-label>
+            <ion-label range-right>1</ion-label>
+          </ion-range>
+        </ion-card-content>
+      </ion-card-header>
+    </ion-card>
 </ion-content>

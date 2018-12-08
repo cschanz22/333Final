@@ -12,6 +12,7 @@ export class AboutPage {
   lng: any;
   watchId: any;
 
+
   constructor(public navCtrl: NavController, public geo: Geolocation) {
     this.lat = "-";
     this.lng = "-";
